@@ -11,6 +11,8 @@ import {ThemeProvider} from 'styled-components'
 
 import Logo from '../components/Logo'
 import Text from '../components/Text'
+import Button from '../components/Button'
+
 
 import Header from '../components/Header'
 
@@ -35,7 +37,20 @@ storiesOf('Components', module)
       </Text>
     </ThemeProvider>
   ))
-
+  .add('Default Button', () => (
+    <ThemeProvider theme={theme}>
+      <Button>
+        Trivia
+      </Button>
+    </ThemeProvider>
+  ))
+  .add('Selected Button', () => (
+    <ThemeProvider theme={theme}>
+      <Button selected>
+        Trivia
+      </Button>
+    </ThemeProvider>
+  ))
 storiesOf('User Interface', module)
   .add('Header', () => (
     <ThemeProvider theme={theme}>
