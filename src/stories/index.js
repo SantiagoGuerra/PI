@@ -4,11 +4,15 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import '../index.css'
+
 import theme from '../styled.theme'
 import {ThemeProvider} from 'styled-components'
 
 import Logo from '../components/Logo'
 import Text from '../components/Text'
+
+import Header from '../components/Header'
 
 
 storiesOf('Components', module)
@@ -29,5 +33,12 @@ storiesOf('Components', module)
       <Text>
       Find interesting things about your favorite number
       </Text>
+    </ThemeProvider>
+  ))
+
+storiesOf('User Interface', module)
+  .add('Header', () => (
+    <ThemeProvider theme={theme}>
+      <Header/>
     </ThemeProvider>
   ))
