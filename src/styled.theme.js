@@ -3,7 +3,7 @@ const rem = px => `${px / 16}rem`
 
 // colors
 
-theme.mainColor  = `#0063FF`
+theme.mainColor  = `#10AC84`
 theme.darkColor = `#636363`
 theme.lightColor = `#B0B0B0`
 
