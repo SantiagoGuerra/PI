@@ -40,7 +40,7 @@ theme.largeBorder = rem(30)
 // Size Icons
 
 theme.smallIconSize = rem(24)
-theme.normalIconSize = rem(60)
+theme.normalIconSize = rem(80)
 theme.largeIconSize = rem(120)
 
 export default theme
