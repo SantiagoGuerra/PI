@@ -18,7 +18,7 @@ a {
 }
 
 ::selection {
-  background-color: #0063FF;
+  background-color: #10AC84;
   color: #FFFFFF;
 }
 
@@ -31,10 +31,10 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0063FF;
+  background-color: #10AC84;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #0030FF;
+  background-color: #10AC84;
 }
