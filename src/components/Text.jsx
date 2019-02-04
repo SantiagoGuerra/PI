@@ -5,6 +5,7 @@ const StyledText = styled.p`
   color: ${props => props.theme.darkColor};
   font-family: ${props => props.theme.fontFamily};
   font-size: ${props => props.theme.largeFontSize};
+  text-align: center;
 
   @media screen and (min-width: 760px) {
     font-size: ${props => props.theme.extraLargeFontSize}
