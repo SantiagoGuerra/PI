@@ -25,7 +25,7 @@ theme.superLargeFontSize = rem(31.25)
 // Spacing
 theme.superSmallSpacingSize = rem(2)
 theme.extraSmallSpacingSize = rem(4)
-theme.smallSpacingSize = rem(16)
+theme.smallSpacingSize = rem(8)
 theme.normalSpacingSize = rem(24)
 theme.largeSpacingSize = rem(32)
 theme.extraLargeSpacingSize = rem(48)
