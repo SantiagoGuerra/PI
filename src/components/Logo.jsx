@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const StyledLogoContainer = styled.div`
   height: ${props => props.theme.normalIconSize};
   width: ${props => props.theme.normalIconSize};
+  margin-bottom: ${props => props.theme.smallSpacingSize};
 
   @media screen and (min-width: 760px){
     height: ${props => props.theme.largeIconSize};
