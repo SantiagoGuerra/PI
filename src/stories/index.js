@@ -17,6 +17,7 @@ import Button from '../components/Button'
 
 import Header from '../components/Header'
 import SubmitNumber from '../components/SubmitNumber';
+import Message from '../components/Message';
 
 
 storiesOf('Components', module)
@@ -67,5 +68,12 @@ storiesOf('User Interface', module)
   .add('Submit Number', () => (
     <ThemeProvider theme={theme}>
       <SubmitNumber/>
+    </ThemeProvider>
+  ))
+  .add('Message', () => (
+    <ThemeProvider theme={theme}>
+      <Message>
+        Hola Soy Santiago, soy desarrollador frontend y me gusta programar.
+      </Message>
     </ThemeProvider>
   ))
