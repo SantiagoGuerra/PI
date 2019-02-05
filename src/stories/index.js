@@ -16,6 +16,7 @@ import Button from '../components/Button'
 
 
 import Header from '../components/Header'
+import SubmitNumber from '../components/SubmitNumber';
 
 
 storiesOf('Components', module)
@@ -61,5 +62,10 @@ storiesOf('User Interface', module)
   .add('Header', () => (
     <ThemeProvider theme={theme}>
       <Header/>
+    </ThemeProvider>
+  ))
+  .add('Submit Number', () => (
+    <ThemeProvider theme={theme}>
+      <SubmitNumber/>
     </ThemeProvider>
   ))
