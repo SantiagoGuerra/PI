@@ -10,7 +10,6 @@ const StyledButton = styled.button`
   font-family: ${props => props.theme.fontFamily};
   border: 2px solid ${props => props.theme.mainColor};
   transition: all .3s ease-out;
-  margin-right: 16px;
 
   &:hover {
     background: ${props => props.theme.mainColor};
