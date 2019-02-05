@@ -10,6 +10,7 @@ import theme from '../styled.theme'
 import {ThemeProvider} from 'styled-components'
 
 import Logo from '../components/Logo'
+import Form from '../components/Form'
 import Text from '../components/Text'
 import Button from '../components/Button'
 
@@ -49,6 +50,11 @@ storiesOf('Components', module)
       <Button selected>
         Trivia
       </Button>
+    </ThemeProvider>
+  ))
+  .add('Form', () => (
+    <ThemeProvider theme={theme}>
+      <Form/>
     </ThemeProvider>
   ))
 storiesOf('User Interface', module)
