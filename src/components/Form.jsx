@@ -5,6 +5,7 @@ const StyledForm = styled.form`
   display: flex;
   font-family: ${props => props.theme.fontFamily};
   font-size: ${props => props.theme.normalFontSize};
+  width: 100%;
 `
 
 const StyledInputNumber = styled.input.attrs({
