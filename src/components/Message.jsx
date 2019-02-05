@@ -9,6 +9,7 @@ const StyledMessage = styled.div`
     position: absolute;
     background: ${props => props.theme.mainColor};
     height: 3px; 
+    border-radius: 1.5px;
     width: 200px;
     left: 0;
     transition: all 800ms cubic-bezier(.7,-0.72,.34,1.81);
@@ -19,6 +20,7 @@ const StyledMessage = styled.div`
     position: absolute;
     background: ${props => props.theme.mainColor};
     height: 3px; 
+    border-radius: 1.5px;
     width: 200px;
     right: 0;
     transition: all 800ms cubic-bezier(.34,1.81,.34,1.81) 800ms;
