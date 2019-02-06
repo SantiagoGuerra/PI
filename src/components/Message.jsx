@@ -4,6 +4,9 @@ import Text from './Text';
 
 const StyledMessage = styled.div`
   position: relative;
+  margin-top: 62px;
+  margin-bottom: 62px;
+
   &::before {
     content: ' ';
     position: absolute;

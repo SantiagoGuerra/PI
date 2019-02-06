@@ -5,17 +5,31 @@ import SubmitNumber from './SubmitNumber'
 import Message from './Message';
 
 const StyledMain = styled.main`
-  background: red;
+  /* background: red; */
   display: flex;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 62px;
 `
 
-const Main = () => (
+const StyledMainItem = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 430px;
+`
+
+const Main = ({
+  ui,
+  buttonSelected
+}) => (
   <StyledMain>
-    <Header/>
-    <SubmitNumber />
-    <Message>This is a message</Message>
+    <StyledMainItem>
+      <Header/>
+      <SubmitNumber buttons={ui.buttons} buttonSelected={buttonSelected}/>
+      <Message>February 25th is the day in 1933 that the USS Ranger is launched.</Message>
+    </StyledMainItem>
   </StyledMain>
 )
 

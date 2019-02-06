@@ -9,6 +9,7 @@ const StyledSubmitNumber = styled.div`
   max-width: 400px;
   align-items: center;
   margin-top: 48px;
+  width: 100%;
 `
 
 const ButtonsContainer = styled.div`
@@ -18,19 +19,19 @@ const ButtonsContainer = styled.div`
   width: 90%;
 ` 
 
-const SubmitNumber = () => (
+const SubmitNumber = ({buttons, buttonSelected}) => (
   <StyledSubmitNumber>
     <ButtonsContainer>
-      <Button>
+      <Button selected={buttons[0].isOpen} buttonSelected={buttonSelected}>
         Trivia
       </Button>
-      <Button>
+      <Button selected={buttons[1].isOpen} buttonSelected={buttonSelected}>
         Year
       </Button>
-      <Button>
+      <Button selected={buttons[2].isOpen} buttonSelected={buttonSelected}>
         Date
       </Button>
-      <Button>
+      <Button selected={buttons[3].isOpen} buttonSelected={buttonSelected}>
         Math
       </Button>
     </ButtonsContainer>
