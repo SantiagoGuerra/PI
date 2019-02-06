@@ -20,3 +20,25 @@ export const buttonSelectedAction = name => {
     payload: buttons
   }
 }
+
+export const receiveMessage = msg => ({
+  type: 'RECEIVE_MESSAGE',
+  msg
+})
+
+export const requestMessage = (number, type) => function (dispatch) {
+  return fetch(`http://numbersapi.com/${number}/${type}`)
+    .then(response => response.text())
+    .then(text => dispatch(receiveMessage(text)))
+    .catch(error => receiveMessage(error))
+}
+
+export const dataType = category => ({
+  type: 'DATA_CATEGORY',
+  category
+})
+
+export const dataNumber = number => ({
+  type: 'DATA_NUMBER',
+  number
+})

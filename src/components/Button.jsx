@@ -34,10 +34,11 @@ const StyledButton = styled.button`
   }}
 `
 
-const Button = ({children, selected, buttonSelected}) => (
+const Button = ({children, selected, buttonSelected, dataCategory}) => (
   <StyledButton selected={selected} onClick={ e => {
     e.preventDefault()
     buttonSelected(children.toLowerCase())
+    dataCategory(children.toLowerCase())
 }}>
     {children}
   </StyledButton>

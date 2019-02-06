@@ -19,23 +19,23 @@ const ButtonsContainer = styled.div`
   width: 90%;
 ` 
 
-const SubmitNumber = ({buttons, buttonSelected}) => (
+const SubmitNumber = ({buttons, buttonSelected, request, data, dataCategory, dataNumber}) => (
   <StyledSubmitNumber>
     <ButtonsContainer>
-      <Button selected={buttons[0].isOpen} buttonSelected={buttonSelected}>
+      <Button selected={buttons[0].isOpen} buttonSelected={buttonSelected} dataCategory={dataCategory}>
         Trivia
       </Button>
-      <Button selected={buttons[1].isOpen} buttonSelected={buttonSelected}>
+      <Button selected={buttons[1].isOpen} buttonSelected={buttonSelected} dataCategory={dataCategory}>
         Year
       </Button>
-      <Button selected={buttons[2].isOpen} buttonSelected={buttonSelected}>
+      <Button selected={buttons[2].isOpen} buttonSelected={buttonSelected} dataCategory={dataCategory}>
         Date
       </Button>
-      <Button selected={buttons[3].isOpen} buttonSelected={buttonSelected}>
+      <Button selected={buttons[3].isOpen} buttonSelected={buttonSelected} dataCategory={dataCategory}>
         Math
       </Button>
     </ButtonsContainer>
-    <Form/>
+    <Form request={request} data={data} dataNumber={dataNumber}/>
   </StyledSubmitNumber>
 )
 

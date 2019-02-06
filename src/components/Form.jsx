@@ -60,10 +60,17 @@ const StyledInputSubmit = styled.input.attrs({
   }
 `
 
-const Form = () => (
+const Form = ({request, data, dataNumber}) => (
   <StyledForm>
-    <StyledInputNumber/>
-    <StyledInputSubmit/>
+    <StyledInputNumber onChange={ e => {
+      let value = e.target.value
+      dataNumber(value)
+    }}/>
+    <StyledInputSubmit onClick= { e => {
+       e.preventDefault()
+       request(data.number, data.category)
+      }
+    }/>
   </StyledForm>
 )
 

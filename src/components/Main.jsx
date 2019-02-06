@@ -22,13 +22,18 @@ const StyledMainItem = styled.div`
 
 const Main = ({
   ui,
-  buttonSelected
+  buttonSelected,
+  message,
+  request,
+  data,
+  dataCategory,
+  changeInputNumber
 }) => (
   <StyledMain>
     <StyledMainItem>
       <Header/>
-      <SubmitNumber buttons={ui.buttons} buttonSelected={buttonSelected}/>
-      <Message>February 25th is the day in 1933 that the USS Ranger is launched.</Message>
+      <SubmitNumber buttons={ui.buttons} buttonSelected={buttonSelected} request={request} data={data} dataCategory={dataCategory} dataNumber={changeInputNumber}/>
+      <Message>{message.content}</Message>
     </StyledMainItem>
   </StyledMain>
 )
