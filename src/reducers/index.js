@@ -15,7 +15,6 @@ const ui = (state = initialState.ui, action) => {
 
   switch(action.type) {
     case 'BUTTON_SELECTED':
-      console.log('dodksjosdfj')
       return Object.assign({}, state, {buttons: action.payload})
     default:
       return state 

@@ -38,7 +38,6 @@ const Button = ({children, selected, buttonSelected}) => (
   <StyledButton selected={selected} onClick={ e => {
     e.preventDefault()
     buttonSelected(children.toLowerCase())
-    console.log(selected)
 }}>
     {children}
   </StyledButton>

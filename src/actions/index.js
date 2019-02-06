@@ -14,7 +14,6 @@ export const buttonSelectedAction = name => {
       button.isOpen = false
     }})
 
-    console.log(buttons, name)
 
   return {
     type: 'BUTTON_SELECTED',
